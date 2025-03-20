@@ -23,24 +23,22 @@ function TodoApp() {
     };
 
     return (
-        <div>
+        <div className='box'>
             <h1>Todo App</h1>
            <form onSubmit={(e)=> addTodo(e)}>
            <input
                 type="text"
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
-                placeholder='Agregar una tarea'
+                placeholder='Agregar una tarea...'
             />
            </form>
            
-            <ul>
+            <ul className='lista'>
                 {todos.map((todo, index) => (
-                    <li key={index}>
+                    <li className='item-list' key={index}>
                         {todo}
-                        <i class="fas fa-trash-alt"
-                        />
-                        <button onClick={() => deleteTodo(index)}>Eliminar</button>
+                        <button className='btn-eliminar' onClick={() => deleteTodo(index)}> <i class="fas fa-trash-alt" /></button>
                     </li>
                 ))}
             </ul>

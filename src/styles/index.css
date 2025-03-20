@@ -1,4 +1,4 @@
-/* 
+/* h1
 
     You can write your own styles here...
     
@@ -9,3 +9,67 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+h1 {
+    color:brown;
+    font-weight: 800;
+    font-size: 3rem;
+   
+    
+}
+input {
+    border:none;
+    border-bottom: 2px solid black;
+    background-color: rgb(167, 94, 94);
+    color: #fff;
+    border-radius: 8px;
+    padding-left: 5px;
+
+    &::placeholder{
+        color: #fff;
+
+    }
+   
+}
+.btn-eliminar{
+    height:30px;
+    margin-left: 8px;
+    padding: 5px;
+    border-radius: 5px;
+}
+   
+
+ul,li{
+    border:1px,solid brown;
+    border-radius: 5px; 
+    padding: 8px;     
+}
+.lista{
+    margin-top: 10px;
+    border: 3px solid brown;
+
+
+}
+.item-list{
+    justify-content: space-between;
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+
+}
+body{
+     height: 100vh;
+    
+}
+.box{
+    height: 400px;
+    width: 400px;
+}
+#root{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
